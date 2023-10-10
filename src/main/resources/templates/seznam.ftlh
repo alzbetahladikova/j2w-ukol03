@@ -90,7 +90,7 @@
         <a href="/detail/${vizitka?index}">
             <div class="vizitka">
                 <div class="jmeno">${vizitka.jmeno}</div>
-                <div class="firma">${vizitka.firma}</div>
+                <div class="firma">${(vizitka.firma)!"-"}</div>
                 <div class="udaje">
                     <div class="adresa">
                         <div>${vizitka.ulice}</div>
