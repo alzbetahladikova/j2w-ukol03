@@ -19,6 +19,8 @@ public class VizitkaController {
           new Vizitka("Jelena Pokorná", "Gama", "Úzká 300","300 00","jelena@nemail.com", "333 333 333","www.prazdnopusto.com")
    );
 
+
+
   @GetMapping("/")
   public ModelAndView seznam() {
     ModelAndView modelAndView = new ModelAndView("/seznam");

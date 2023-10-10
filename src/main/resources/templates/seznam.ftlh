@@ -108,7 +108,7 @@
     [/#items]
 [#else]
     <div>
-       Pusto prázdno. Není tu žádná vizika.
+      <strong> Pusto prázdno. Není tu žádná vizika.</strong>
     </div>
 [/#list]
 

@@ -11,10 +11,10 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
 </head>
 <body>
-[#list vizitka]
+
 <div class="detail">
 
-    [#items as vizitka]
+    [#if vizitka??]
     <div class="vizitka">
 
         <div class="jmeno"> ${vizitka.jmeno} </div>
@@ -37,13 +37,13 @@
         <iframe style="border:none" src="https://frame.mapy.cz/?q=${vizitka.celaAdresa?url}" width="100%" height="100%" frameborder="0"></iframe>
     </div>
 
-    [/#items]
+
     [#else]
         <div>
             Pusto prázdno. Detail tu není.
         </div>
 
-    [/#list]
+    [/#if]
 
 </div>
 
