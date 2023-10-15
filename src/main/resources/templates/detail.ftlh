@@ -17,17 +17,17 @@
     [#if vizitka??]
     <div class="vizitka">
 
-        <div class="jmeno"> ${vizitka.jmeno} </div>
-        <div class="firma">${vizitka.firma}</div>
+        <div class="jmeno"> ${(vizitka.jmeno)!"-"} </div>
+        <div class="firma">${(vizitka.firma)!"-"}</div>
        <div class="udaje">
             <div class="adresa">
-                <div>${vizitka.ulice}</div>
-                <div><span>11000</span>${vizitka.obecPsc}</div>
+                <div>${(vizitka.ulice)!"-"}</div>
+                <div><span>11000</span>${(vizitka.obecPsc)!"-"}</div>
             </div>
             <div class="kontakty">
-                <div><i class="las la-at"></i> <span>${vizitka.email}</span></div>
-                <div><i class="las la-phone-alt"></i> <span>${vizitka.telefon}</span></div>
-                <div><i class="las la-globe"></i> <span>${vizitka.web}</span></div>
+                <div><i class="las la-at"></i> <span>${(vizitka.email)!"-"}</span></div>
+                <div><i class="las la-phone-alt"></i> <span>${(vizitka.telefon)!"-"}</span></div>
+                <div><i class="las la-globe"></i> <span>${(vizitka.web)!"-"}</span></div>
             </div>
         </div>
     </div>
